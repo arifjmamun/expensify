@@ -1,0 +1,15 @@
+{
+	"aaa": {
+	  "prefix": "aaa",
+	  "scope": "dart,flutter",
+	  "body": [
+		"test('should ', () async {",
+		"  // arrange",
+		"  // act",
+		"  // assert",
+		"});"
+	  ],
+	  "description": "aaa"
+	}
+  }
+  

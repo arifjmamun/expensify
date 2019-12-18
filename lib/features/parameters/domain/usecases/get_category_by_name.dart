@@ -7,21 +7,22 @@ import '../../../../core/usecases/usecase.dart';
 import '../entities/category.dart';
 import '../repositories/category_repository.dart';
 
-class GetCategoryById implements UseCase<Category, Params> {
+class GetCategoryByName implements UseCase<Category, Params> {
   final CategoryRepository repository;
-  GetCategoryById(this.repository);
+  GetCategoryByName(this.repository);
 
   @override
   Future<Either<Failure, Category>> call(Params params) async {
-    return await repository.getCategoryById(params.categoryId);
+    return await repository.getCategoryName(params.categoryName);
+    // return null;
   }
 }
 
 class Params extends Equatable {
-  final String categoryId;
+  final String categoryName;
 
-  Params({@required this.categoryId});
+  Params({@required this.categoryName});
 
   @override
-  List<Object> get props => [categoryId];
+  List<Object> get props => [categoryName];
 }
