@@ -21,7 +21,7 @@ class CategoryRepositoryImpl implements CategoryRepository {
 
   @override
   Future<Either<Failure, Category>> getCategoryById(String id) async {
-    // TODO: implement getCategoryById
+    networkInfo.isConnected;
     return null;
   }
 
