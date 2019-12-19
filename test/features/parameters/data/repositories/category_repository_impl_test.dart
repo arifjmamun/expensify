@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:expensify/core/error/exceptions.dart';
 import 'package:expensify/core/error/failures.dart';
-import 'package:expensify/core/platform/network_info.dart';
+import 'package:expensify/core/network/network_info.dart';
 import 'package:expensify/features/parameters/data/datasources/category_local_data_source.dart';
 import 'package:expensify/features/parameters/data/datasources/category_remote_data_source.dart';
 import 'package:expensify/features/parameters/data/models/category_model.dart';
