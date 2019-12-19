@@ -20,8 +20,5 @@ class GetCategoryById implements UseCase<Category, Params> {
 class Params extends Equatable {
   final String categoryId;
 
-  Params({@required this.categoryId});
-
-  @override
-  List<Object> get props => [categoryId];
+  Params({@required this.categoryId}): super([categoryId]);
 }
